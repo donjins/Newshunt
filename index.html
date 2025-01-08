@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <!-- Search Bar with Button -->
+<div class="search-container">
+  <input type="text" id="search" placeholder="Search for news...">
+  <button id="search-button" onclick="searchNews()">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" alt="Search Icon">
+  </button>
+</div>
+
+
+    <!-- Main Content -->
+    <main>
+        <section class="news-cards" id="news-cards">
+            <!-- News Articles will be loaded here -->
+        </section>
+
+        <!-- Load More Button -->
+        <div id="load-more-container">
+            <button id="load-more" onclick="loadMoreArticles()">Load More</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 News Aggregator</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
